@@ -1,10 +1,12 @@
-import { useState } from "react";
+import { useState,useCallback } from "react";
 
 function App() {
     const [length, setlength] = useState(10)
     const [number, setnumber] = useState(false)
     const [char, setchar] = useState(false)
     const [password, setpassword] = useState("")
+
+    const passwordGenerator = useCallback(fn, [])
 
   return (
     <>
